@@ -5,6 +5,8 @@
     box-sizing: border-box;  /* Ensures padding doesn't affect overall dimensions */
 }
 
+
+
 .container-m {
     background-color: burlywood;
     width: 500px;
@@ -37,4 +39,33 @@
 button {
     width: 90px;
     height: 90px;
+    font-size: 20px;
+}
+
+.layout {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.layout-m {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.result { /* Additional styling for the equal button to ensure it aligns correctly */
+    margin-left: auto; /* This pushes the equal button to the right */
+    width: 90px; /* Ensures size consistency */
+    height: 186px;
 }

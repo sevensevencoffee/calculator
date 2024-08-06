@@ -11,6 +11,7 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
+    if(b===0) return "Can't divide by 0";
     return a/b;
 }
 
@@ -36,7 +37,6 @@ let getNums = document.querySelectorAll(".num");
 
 getNums.forEach(function(btn){
     btn.addEventListener('click', function(){
-        displayValue.textContent = "";
         displayValue.textContent += btn.textContent;
     });
 });
@@ -75,6 +75,8 @@ clearBtn.addEventListener('click', function(){
     secNum = null;
     displayValue.textContent = null;
 })
+
+
 
 
 
