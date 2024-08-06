@@ -1,4 +1,5 @@
 * {
+    font-family: 'Courier New', Courier, monospace;
     background-color: blanchedalmond;
     margin: 0;
     padding: 0;
@@ -9,10 +10,10 @@
 
 .container-m {
     background-color: burlywood;
-    width: 500px;
+    width: 460px;
     margin: auto;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 100px;
     box-shadow: 0 0 10px rgba(65, 8, 8, 0.7);  /* Optional: Adds shadow for better visibility */
 }
 
@@ -27,19 +28,26 @@
 }
 
 .display {
-    height: 50px;
-    padding: 20px;
-    border: 1px solid rgb(63, 2, 2);
-    margin: 2px;
-    margin-bottom: 15px;
+    height: 70px;
+    padding: 10px 20px 10px 20px;
+    border: 1.2px solid rgb(105, 53, 9);
+    margin-bottom: 10px;
     border-radius: 10px;
-    text-align: right;
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: rgb(82, 40, 6);
 }
 
 button {
     width: 90px;
     height: 90px;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 550;
+    border-radius: 10px;
+    color: rgb(82, 40, 6);
+    border: 1.4px solid rgb(105, 53, 9);
 }
 
 .layout {

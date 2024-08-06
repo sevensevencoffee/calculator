@@ -37,8 +37,7 @@ let getNums = document.querySelectorAll(".num");
 
 getNums.forEach(function(btn){
     btn.addEventListener('click', function(){
-        displayValue.textContent += btn.textContent;
-    });
+            displayValue.textContent += btn.textContent;})
 });
 
 
@@ -46,21 +45,20 @@ let getOperator = document.querySelectorAll(".op");
 getOperator.forEach(function(btn){
     btn.addEventListener('click', function(){
         operator = btn.textContent;
-        firstNum = parseInt(displayValue.textContent);
-        displayValue.textContent= operator;
+        firstNum = parseFloat(displayValue.textContent);
+        if (firstNum !== null) displayValue.textContent = "";
         })
     })
 
 let equalBtn = document.querySelector(".result");
 equalBtn.addEventListener('click', function(){
-    secNum = parseInt(displayValue.textContent);
-    let result = operate(operator, firstNum, secNum);
+    secNum = parseFloat(displayValue.textContent);
+    let result = (operate(operator, firstNum, secNum)).toString();
     displayValue.textContent = result;
     firstNum = result;
     secNum = null;
     operator = null;
 })
-
 
 let delBtn = document.querySelector(".del");
 delBtn.addEventListener('click', function(){
