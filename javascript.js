@@ -33,10 +33,15 @@ function operate(operator, firstNum, secNum){
 
 let displayValue = document.querySelector(".display")
 let getNums = document.querySelectorAll(".num");
+let resultComputed = false;
 
 
 getNums.forEach(function(btn){
     btn.addEventListener('click', function(){
+        if(resultComputed){
+            displayValue.textContent="";
+            resultComputed = false;
+        }
             displayValue.textContent += btn.textContent;})
 });
 
@@ -57,7 +62,8 @@ equalBtn.addEventListener('click', function(){
     displayValue.textContent = result;
     firstNum = result;
     secNum = null;
-    operator = null;
+    operator = "";
+    resultComputed = true;
 })
 
 let delBtn = document.querySelector(".del");
