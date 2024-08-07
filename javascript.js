@@ -80,6 +80,12 @@ clearBtn.addEventListener('click', function(){
     displayValue.textContent = null;
 })
 
+let clearSecBtn = document.querySelector(".clear-sec")
+clearSecBtn.addEventListener('click', function(){
+    secNum = null;
+    displayValue.textContent = null;
+})
+
 
 
 
